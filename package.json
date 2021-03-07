@@ -1,6 +1,6 @@
 {
   "name": "fstfy_openapi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "fastify openapi generator",
   "main": "src/index.ts",
   "scripts": {
