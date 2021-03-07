@@ -2,10 +2,12 @@
   "name": "fstfy_openapi",
   "version": "1.0.2",
   "description": "fastify openapi generator",
-  "main": "src/index.ts",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "clean": "rm -rf ./build/*",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node build/index.js",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "author": "Abhishek Dhadwal",
   "license": "ISC",
