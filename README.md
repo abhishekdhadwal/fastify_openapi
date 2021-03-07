@@ -38,7 +38,7 @@ server.route({
   method : 'POST',
   url : '/path',
   schema : {
-    body : { $ref: '#request' },
+    body : bodyJsonSchema,
     response : {}
   },
   config: {
